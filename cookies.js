@@ -30,7 +30,7 @@ function setCookie(){
 }
 readCookie();
 function readCookie(){
-  let krasa = document.cookie("Krasa");
+  let krasa = document.cookie;
   switch(krasa){
     case "grey":
       krasa.style.backgroundColor = "grey";
