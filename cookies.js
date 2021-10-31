@@ -23,7 +23,7 @@ function Nospied() {
 setCookie();
 function setCookie(){
   let cookie = document.cookie;
-  if(cookie.getCookie != "krasa") {
+  if(cookie.getCookie !== "krasa") {
     document.cookie = "Krasa=azure";
 
   }
