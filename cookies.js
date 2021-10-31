@@ -30,8 +30,8 @@ function setCookie(){
 }
 readCookie();
 function readCookie(){
-  let krasa = document.cookie;
-  switch(Nomaina){
+  let krasa = document.cookie("Krasa");
+  if(krasa){
     case "grey":
       krasa.style.backgroundColor = "grey";
       Nomaina = 1;
@@ -41,5 +41,7 @@ function readCookie(){
       krasa.style.backgroundColor = "azure";
       Nomaina = 0;
       break;
+      default:
+      Nomaina = 1;
   }    
 }
