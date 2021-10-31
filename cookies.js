@@ -8,13 +8,13 @@ function Nospied() {
       case 0: 
         krasa.style.backgroundColor = "grey";
         Nomaina++;
-        document.cookie = "Krasa=grey";
+        document.cookie = "grey";
 
         break;
       case 1:
         krasa.style.backgroundColor = "azure";
         Nomaina--;
-        document.cookie = "Krasa=azure";
+        document.cookie = "azure";
 
         break;  
     }
@@ -23,8 +23,8 @@ function Nospied() {
 setCookie();
 function setCookie(){
   let cookie = document.cookie;
-  if(cookie.getCookie != "Krasa") {
-    document.cookie = "Krasa=azure";
+  if(cookie.getCookie != "grey") {
+    document.cookie = "azure";
 
   }
 }
