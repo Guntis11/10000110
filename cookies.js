@@ -1,9 +1,12 @@
-"use strict"
+use strict"
 
 let Nomaina = 0;
+// let krasa = document.getElementById("body");
+
 
 function Nospied() {
-    let krasa = document.getElementById("body");
+  let krasa = document.getElementById("body");
+
     switch(Nomaina){
       case 0: 
         krasa.style.backgroundColor = "grey";
@@ -20,19 +23,12 @@ function Nospied() {
     }
 }
 
-setCookie();
-function setCookie(){
-  let cookie = document.cookie;
-  if(cookie.getCookie != "Krasa") {
-    document.cookie = "Krasa=azure";
 
-  }
-}
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
+  for(let i = 0; i <ca.length; i++) {
     let c = ca[i];
     while (c.charAt(0) == ' ') {
       c = c.substring(1);
@@ -43,11 +39,17 @@ function getCookie(cname) {
   }
   return "";
 }
+console.log(getCookie("Krasa"));
 
-readCookie();
-function readCookie(){
-  let krasa = getCookie("Krasa");
-  switch(krasa){
+
+
+
+setcolor()
+function setcolor() {
+  let krasa = document.getElementById("body");
+
+  switch(getCookie("Krasa"))
+  {
     case "grey":
       krasa.style.backgroundColor = "grey";
       Nomaina = 1;
@@ -56,6 +58,6 @@ function readCookie(){
     case "azure":
       krasa.style.backgroundColor = "azure";
       Nomaina = 0;
-      break;
-  }    
+      break
+  }
 }
