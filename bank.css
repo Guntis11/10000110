@@ -1,0 +1,102 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+}
+*/
+body{
+  background-color: bisque;
+}
+.B{
+  height: 50px;
+  position: relative;
+}
+.B > p {
+  top:50%;
+  transform: translate(0% ,-50%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+
+.t{
+  height: 50px;
+  position: relative;
+}
+.t > p {
+  top:50%;
+  transform: translate(0% ,-50%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+
+
+.a {
+  height: 30px;
+  position: relative;
+  background-color: white;
+  margin:auto;
+  width: 15%;
+  border: 4px;
+  padding:5px;
+}
+.a > p {
+  
+  top:50%;
+  transform: translate(0% ,-50%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  
+}
+
+
+
+
+.a1{
+  height: 30px;
+  position: relative;
+  background-color: white;
+  margin:auto;
+  width: 15%;
+  border: 4px;
+  padding:5px;
+   
+}
+.a1 > p {
+  top:50%;
+  transform: translate(0% ,-50%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
+
+
+.s{
+  height: 30px;
+  position: relative;
+  background-color: tomato;
+  margin:auto;
+  width: 15%;
+  border: 4px;
+  padding:5px;
+ 
+}
+.s > p{
+  top:50%;
+  transform: translate(0% ,-50%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+}
